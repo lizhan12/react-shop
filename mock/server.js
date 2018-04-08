@@ -1,7 +1,6 @@
-var Koa = require('koa');
-var router = require('koa-router');
-// var router = new koaRouter();
-var app=new Koa();
+var app = require('koa')();
+var router = require('koa-router')();
+
 // router.get('/', function *(next) {
 //     this.body = 'hello koa !'
 // });
@@ -12,10 +11,8 @@ var app=new Koa();
 
 // 首页 —— 广告（超值特惠）
 var homeAdData = require('./home/ad.js')
-
-router.get('/api/homead', (next)=> {
-	console.log(homeAdData)
-    this.response.body = homeAdData
+router.get('/api/homead', function *(next) {
+    this.body = homeAdData
 });
 
 // 首页 —— 推荐列表（猜你喜欢）
@@ -37,4 +34,4 @@ router.get('/api/homelist/:city/:page', function *(next) {
 // 开始服务并生成路由
 app.use(router.routes())
    .use(router.allowedMethods());
-app.listen(3000);
+app.listen(3002);
