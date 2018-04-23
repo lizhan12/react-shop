@@ -9,7 +9,7 @@ import "./static/css/font.css";
 const store =configStore();
 render(
    		<Provider store={store}>
-			<RouterMap history={hashHistory} />
+			   <RouterMap history={hashHistory} />
    		</Provider>,
        
    

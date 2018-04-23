@@ -16,7 +16,7 @@ class Category extends React.Component{
 
 	render(){
 		var opt={
-			auto:1000,
+			auto:3000,
 			callback:function(index){
 					this.setState({index:index})
 			}.bind(this)

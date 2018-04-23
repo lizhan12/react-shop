@@ -20,14 +20,14 @@ class Ad extends React.Component{
    }
    componentDidMount(){
       const result=getAdData();
-      console.log(result)
       result.then(res=>{
          return  res.json()
       }).then(json=>{
-         console.log(json)
+     
          this.setState({data:json})
       })
    }
+  
 }
 
 export default Ad;
