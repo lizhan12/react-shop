@@ -7,7 +7,11 @@ class NotFound extends React.Component{
       
    }
 	render(){
-		return(<div>${this.props.cityName}</div>)
+		return(<div>
+
+				<h1>404</h1>	 
+
+			</div>)
 	}
 }
 

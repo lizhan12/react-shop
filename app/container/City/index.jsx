@@ -21,7 +21,7 @@ class City extends React.Component{
          </div>)
 	}
    componentDidMount(){
-      console.log('redux',redux)
+      console.log('redux',this.props.history)
    }
    changeCity(newCity){
       if(newCity==null)return;
