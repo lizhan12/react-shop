@@ -57,7 +57,7 @@ const config={
 			template:__dirname+"/app/index.tmpl.html"
 		}),
 		new webpack.HotModuleReplacementPlugin(),
-		new OpenBrowserPlugin({url:"localhost:8081"}),
+		new OpenBrowserPlugin({url:"localhost:8091"}),
 		new webpack.DefinePlugin({__DEV__:JSON.stringify(JSON.parse((process.env.NODE_ENV=="dev")||"false"))})
 	],
 	devServer:{
@@ -72,7 +72,7 @@ const config={
 		historyApiFallback:true,
 		inline:true,
 		hot:true,
-		port:8081
+		port:8091
 	}
 }
 module.exports=config 

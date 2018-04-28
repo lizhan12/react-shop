@@ -19,9 +19,7 @@ class RouterMap extends React.Component{
 					<Route  component={App} />
 					<Switch>
 						<Route exact path="/" component={Home} />
-						<Route path="/city" component={City} />
-						
-						
+						<Route path="/city" component={City} />					
 						<Route path="/user" component={User} />
 						<Route path="/search/:category?/:keyword?" component={Search} />
 						<Route path="/detail/:id" component={Detail} />

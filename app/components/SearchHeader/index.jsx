@@ -7,11 +7,11 @@ class SearchHeader extends React.Component{
 	static contextTypes = {
     	router: PropTypes.object
   	}
+  	
 	constructor(props,context){
 		super(props,context);
 		this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
 	}
-
 
 	render() {
 		return (<div id="search-header" className="clear-fix">
